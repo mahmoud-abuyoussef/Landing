@@ -75,6 +75,11 @@ section {
   color: var(--white);
   background-color: var(--title-color);
 }
+.logo a {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 22px;
+}
 img {
   max-width: 100%;
 }
@@ -91,11 +96,6 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-header .logo a {
-  color: var(--title-color);
-  font-weight: bold;
-  font-size: 22px;
 }
 header nav ul li a {
   color: var(--text-color);
@@ -143,6 +143,9 @@ header nav ul li a {
     color: var(--title-color);
   }
 }
+.hero {
+  padding-bottom: 200px;
+}
 .hero a {
   display: inline-block;
   margin-top: 30px;
@@ -159,9 +162,62 @@ header nav ul li a {
   right: 0;
   z-index: -1;
   width: 50%;
+  height: 100%;
 }
 @media (max-width: 991px) {
   .hero img {
     display: none;
   }
+}
+.about .dummy {
+  padding-top: 30px;
+  gap: 10px;
+}
+.about .dummy div {
+  width: 250px;
+}
+.about .dummy div img {
+  margin-bottom: 20px;
+}
+.about .dummy div p {
+  color: var(--alt-text-color);
+}
+.price {
+  text-align: center;
+  background-color: var(--bg);
+}
+.price span {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--title-color);
+}
+.price a {
+  margin: auto;
+}
+footer {
+  background-color: var(--alt-bg);
+}
+@media (min-width: 992px) {
+  footer .d-flex {
+    justify-content: space-between;
+  }
+}
+footer .container div {
+  padding: 30px 0;
+}
+footer .container div:first-child {
+  border-bottom: 1px solid rgb(0 0 0 / 0.1);
+}
+footer p {
+  color: var(--alt-text-color);
+}
+footer ul {
+  display: flex;
+  gap: 20px;
+}
+footer ul li a {
+  color: var(--text-color);
+}
+footer ul li a:hover {
+  color: var(--title-color);
 }
